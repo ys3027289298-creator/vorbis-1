@@ -1,0 +1,1198 @@
+[toolchain] using provisioned libogg under /home/ys/.codex-relay-home-edmanqdf/.local/oggdev
+[toolchain] using provisioned valgrind under /home/ys/local/valgrind
+
+==== Configuring sanitizer build ====
+-- Configuring vorbis 1.3.7
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/ys/feedback/uidreczz28ZAeUf6VCJ/build-memcheck-asan
+
+==== Building with AddressSanitizer/UBSan ====
+[ 67%] Built target vorbis
+[ 80%] Built target test_codebook
+[ 74%] Built target vorbisfile
+[ 87%] Built target vorbisenc
+[100%] Built target vorbis_test
+
+==== Running test_codebook under ASan/UBSan/LSan ====
+Testing codebooks with large entry counts across multiple dim values...
+
+  dim=0, entries=8388608 (ov_ilog check: 0+24=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=1, entries=8388607 (ov_ilog check: 1+23=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=2, entries=4194303 (ov_ilog check: 2+22=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=4, entries=2097151 (ov_ilog check: 3+21=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=8, entries=1048575 (ov_ilog check: 4+20=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=16, entries=524287 (ov_ilog check: 5+19=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=32, entries=262143 (ov_ilog check: 6+18=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=64, entries=131071 (ov_ilog check: 7+17=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+
+8/8 tests passed.
+All tests passed.
+
+==== Running full encode/decode suite (528 cases) under ASan/UBSan/LSan ====
+
+Testing 1 channel
+
+    vorbis_1ch_q-0.5_44100.ogg : ok
+    vorbis_1ch_q-0.5_48000.ogg : ok
+    vorbis_1ch_q-0.5_32000.ogg : ok
+    vorbis_1ch_q-0.5_22050.ogg : ok
+    vorbis_1ch_q-0.5_16000.ogg : ok
+    vorbis_1ch_q-0.5_96000.ogg : ok
+    vorbis_1ch_q0.5_44100.ogg : ok
+    vorbis_1ch_q0.5_48000.ogg : ok
+    vorbis_1ch_q0.5_32000.ogg : ok
+    vorbis_1ch_q0.5_22050.ogg : ok
+    vorbis_1ch_q0.5_16000.ogg : ok
+    vorbis_1ch_q0.5_96000.ogg : ok
+    vorbis_1ch_q1.5_44100.ogg : ok
+    vorbis_1ch_q1.5_48000.ogg : ok
+    vorbis_1ch_q1.5_32000.ogg : ok
+    vorbis_1ch_q1.5_22050.ogg : ok
+    vorbis_1ch_q1.5_16000.ogg : ok
+    vorbis_1ch_q1.5_96000.ogg : ok
+    vorbis_1ch_q2.5_44100.ogg : ok
+    vorbis_1ch_q2.5_48000.ogg : ok
+    vorbis_1ch_q2.5_32000.ogg : ok
+    vorbis_1ch_q2.5_22050.ogg : ok
+    vorbis_1ch_q2.5_16000.ogg : ok
+    vorbis_1ch_q2.5_96000.ogg : ok
+    vorbis_1ch_q3.5_44100.ogg : ok
+    vorbis_1ch_q3.5_48000.ogg : ok
+    vorbis_1ch_q3.5_32000.ogg : ok
+    vorbis_1ch_q3.5_22050.ogg : ok
+    vorbis_1ch_q3.5_16000.ogg : ok
+    vorbis_1ch_q3.5_96000.ogg : ok
+    vorbis_1ch_q4.5_44100.ogg : ok
+    vorbis_1ch_q4.5_48000.ogg : ok
+    vorbis_1ch_q4.5_32000.ogg : ok
+    vorbis_1ch_q4.5_22050.ogg : ok
+    vorbis_1ch_q4.5_16000.ogg : ok
+    vorbis_1ch_q4.5_96000.ogg : ok
+    vorbis_1ch_q5.5_44100.ogg : ok
+    vorbis_1ch_q5.5_48000.ogg : ok
+    vorbis_1ch_q5.5_32000.ogg : ok
+    vorbis_1ch_q5.5_22050.ogg : ok
+    vorbis_1ch_q5.5_16000.ogg : ok
+    vorbis_1ch_q5.5_96000.ogg : ok
+    vorbis_1ch_q6.5_44100.ogg : ok
+    vorbis_1ch_q6.5_48000.ogg : ok
+    vorbis_1ch_q6.5_32000.ogg : ok
+    vorbis_1ch_q6.5_22050.ogg : ok
+    vorbis_1ch_q6.5_16000.ogg : ok
+    vorbis_1ch_q6.5_96000.ogg : ok
+    vorbis_1ch_q7.5_44100.ogg : ok
+    vorbis_1ch_q7.5_48000.ogg : ok
+    vorbis_1ch_q7.5_32000.ogg : ok
+    vorbis_1ch_q7.5_22050.ogg : ok
+    vorbis_1ch_q7.5_16000.ogg : ok
+    vorbis_1ch_q7.5_96000.ogg : ok
+    vorbis_1ch_q8.5_44100.ogg : ok
+    vorbis_1ch_q8.5_48000.ogg : ok
+    vorbis_1ch_q8.5_32000.ogg : ok
+    vorbis_1ch_q8.5_22050.ogg : ok
+    vorbis_1ch_q8.5_16000.ogg : ok
+    vorbis_1ch_q8.5_96000.ogg : ok
+    vorbis_1ch_q9.5_44100.ogg : ok
+    vorbis_1ch_q9.5_48000.ogg : ok
+    vorbis_1ch_q9.5_32000.ogg : ok
+    vorbis_1ch_q9.5_22050.ogg : ok
+    vorbis_1ch_q9.5_16000.ogg : ok
+    vorbis_1ch_q9.5_96000.ogg : ok
+
+Testing 2 channels
+
+    vorbis_2ch_q-0.5_44100.ogg : ok
+    vorbis_2ch_q-0.5_48000.ogg : ok
+    vorbis_2ch_q-0.5_32000.ogg : ok
+    vorbis_2ch_q-0.5_22050.ogg : ok
+    vorbis_2ch_q-0.5_16000.ogg : ok
+    vorbis_2ch_q-0.5_96000.ogg : ok
+    vorbis_2ch_q0.5_44100.ogg : ok
+    vorbis_2ch_q0.5_48000.ogg : ok
+    vorbis_2ch_q0.5_32000.ogg : ok
+    vorbis_2ch_q0.5_22050.ogg : ok
+    vorbis_2ch_q0.5_16000.ogg : ok
+    vorbis_2ch_q0.5_96000.ogg : ok
+    vorbis_2ch_q1.5_44100.ogg : ok
+    vorbis_2ch_q1.5_48000.ogg : ok
+    vorbis_2ch_q1.5_32000.ogg : ok
+    vorbis_2ch_q1.5_22050.ogg : ok
+    vorbis_2ch_q1.5_16000.ogg : ok
+    vorbis_2ch_q1.5_96000.ogg : ok
+    vorbis_2ch_q2.5_44100.ogg : ok
+    vorbis_2ch_q2.5_48000.ogg : ok
+    vorbis_2ch_q2.5_32000.ogg : ok
+    vorbis_2ch_q2.5_22050.ogg : ok
+    vorbis_2ch_q2.5_16000.ogg : ok
+    vorbis_2ch_q2.5_96000.ogg : ok
+    vorbis_2ch_q3.5_44100.ogg : ok
+    vorbis_2ch_q3.5_48000.ogg : ok
+    vorbis_2ch_q3.5_32000.ogg : ok
+    vorbis_2ch_q3.5_22050.ogg : ok
+    vorbis_2ch_q3.5_16000.ogg : ok
+    vorbis_2ch_q3.5_96000.ogg : ok
+    vorbis_2ch_q4.5_44100.ogg : ok
+    vorbis_2ch_q4.5_48000.ogg : ok
+    vorbis_2ch_q4.5_32000.ogg : ok
+    vorbis_2ch_q4.5_22050.ogg : ok
+    vorbis_2ch_q4.5_16000.ogg : ok
+    vorbis_2ch_q4.5_96000.ogg : ok
+    vorbis_2ch_q5.5_44100.ogg : ok
+    vorbis_2ch_q5.5_48000.ogg : ok
+    vorbis_2ch_q5.5_32000.ogg : ok
+    vorbis_2ch_q5.5_22050.ogg : ok
+    vorbis_2ch_q5.5_16000.ogg : ok
+    vorbis_2ch_q5.5_96000.ogg : ok
+    vorbis_2ch_q6.5_44100.ogg : ok
+    vorbis_2ch_q6.5_48000.ogg : ok
+    vorbis_2ch_q6.5_32000.ogg : ok
+    vorbis_2ch_q6.5_22050.ogg : ok
+    vorbis_2ch_q6.5_16000.ogg : ok
+    vorbis_2ch_q6.5_96000.ogg : ok
+    vorbis_2ch_q7.5_44100.ogg : ok
+    vorbis_2ch_q7.5_48000.ogg : ok
+    vorbis_2ch_q7.5_32000.ogg : ok
+    vorbis_2ch_q7.5_22050.ogg : ok
+    vorbis_2ch_q7.5_16000.ogg : ok
+    vorbis_2ch_q7.5_96000.ogg : ok
+    vorbis_2ch_q8.5_44100.ogg : ok
+    vorbis_2ch_q8.5_48000.ogg : ok
+    vorbis_2ch_q8.5_32000.ogg : ok
+    vorbis_2ch_q8.5_22050.ogg : ok
+    vorbis_2ch_q8.5_16000.ogg : ok
+    vorbis_2ch_q8.5_96000.ogg : ok
+    vorbis_2ch_q9.5_44100.ogg : ok
+    vorbis_2ch_q9.5_48000.ogg : ok
+    vorbis_2ch_q9.5_32000.ogg : ok
+    vorbis_2ch_q9.5_22050.ogg : ok
+    vorbis_2ch_q9.5_16000.ogg : ok
+    vorbis_2ch_q9.5_96000.ogg : ok
+
+Testing 3 channels
+
+    vorbis_3ch_q-0.5_44100.ogg : ok
+    vorbis_3ch_q-0.5_48000.ogg : ok
+    vorbis_3ch_q-0.5_32000.ogg : ok
+    vorbis_3ch_q-0.5_22050.ogg : ok
+    vorbis_3ch_q-0.5_16000.ogg : ok
+    vorbis_3ch_q-0.5_96000.ogg : ok
+    vorbis_3ch_q0.5_44100.ogg : ok
+    vorbis_3ch_q0.5_48000.ogg : ok
+    vorbis_3ch_q0.5_32000.ogg : ok
+    vorbis_3ch_q0.5_22050.ogg : ok
+    vorbis_3ch_q0.5_16000.ogg : ok
+    vorbis_3ch_q0.5_96000.ogg : ok
+    vorbis_3ch_q1.5_44100.ogg : ok
+    vorbis_3ch_q1.5_48000.ogg : ok
+    vorbis_3ch_q1.5_32000.ogg : ok
+    vorbis_3ch_q1.5_22050.ogg : ok
+    vorbis_3ch_q1.5_16000.ogg : ok
+    vorbis_3ch_q1.5_96000.ogg : ok
+    vorbis_3ch_q2.5_44100.ogg : ok
+    vorbis_3ch_q2.5_48000.ogg : ok
+    vorbis_3ch_q2.5_32000.ogg : ok
+    vorbis_3ch_q2.5_22050.ogg : ok
+    vorbis_3ch_q2.5_16000.ogg : ok
+    vorbis_3ch_q2.5_96000.ogg : ok
+    vorbis_3ch_q3.5_44100.ogg : ok
+    vorbis_3ch_q3.5_48000.ogg : ok
+    vorbis_3ch_q3.5_32000.ogg : ok
+    vorbis_3ch_q3.5_22050.ogg : ok
+    vorbis_3ch_q3.5_16000.ogg : ok
+    vorbis_3ch_q3.5_96000.ogg : ok
+    vorbis_3ch_q4.5_44100.ogg : ok
+    vorbis_3ch_q4.5_48000.ogg : ok
+    vorbis_3ch_q4.5_32000.ogg : ok
+    vorbis_3ch_q4.5_22050.ogg : ok
+    vorbis_3ch_q4.5_16000.ogg : ok
+    vorbis_3ch_q4.5_96000.ogg : ok
+    vorbis_3ch_q5.5_44100.ogg : ok
+    vorbis_3ch_q5.5_48000.ogg : ok
+    vorbis_3ch_q5.5_32000.ogg : ok
+    vorbis_3ch_q5.5_22050.ogg : ok
+    vorbis_3ch_q5.5_16000.ogg : ok
+    vorbis_3ch_q5.5_96000.ogg : ok
+    vorbis_3ch_q6.5_44100.ogg : ok
+    vorbis_3ch_q6.5_48000.ogg : ok
+    vorbis_3ch_q6.5_32000.ogg : ok
+    vorbis_3ch_q6.5_22050.ogg : ok
+    vorbis_3ch_q6.5_16000.ogg : ok
+    vorbis_3ch_q6.5_96000.ogg : ok
+    vorbis_3ch_q7.5_44100.ogg : ok
+    vorbis_3ch_q7.5_48000.ogg : ok
+    vorbis_3ch_q7.5_32000.ogg : ok
+    vorbis_3ch_q7.5_22050.ogg : ok
+    vorbis_3ch_q7.5_16000.ogg : ok
+    vorbis_3ch_q7.5_96000.ogg : ok
+    vorbis_3ch_q8.5_44100.ogg : ok
+    vorbis_3ch_q8.5_48000.ogg : ok
+    vorbis_3ch_q8.5_32000.ogg : ok
+    vorbis_3ch_q8.5_22050.ogg : ok
+    vorbis_3ch_q8.5_16000.ogg : ok
+    vorbis_3ch_q8.5_96000.ogg : ok
+    vorbis_3ch_q9.5_44100.ogg : ok
+    vorbis_3ch_q9.5_48000.ogg : ok
+    vorbis_3ch_q9.5_32000.ogg : ok
+    vorbis_3ch_q9.5_22050.ogg : ok
+    vorbis_3ch_q9.5_16000.ogg : ok
+    vorbis_3ch_q9.5_96000.ogg : ok
+
+Testing 4 channels
+
+    vorbis_4ch_q-0.5_44100.ogg : ok
+    vorbis_4ch_q-0.5_48000.ogg : ok
+    vorbis_4ch_q-0.5_32000.ogg : ok
+    vorbis_4ch_q-0.5_22050.ogg : ok
+    vorbis_4ch_q-0.5_16000.ogg : ok
+    vorbis_4ch_q-0.5_96000.ogg : ok
+    vorbis_4ch_q0.5_44100.ogg : ok
+    vorbis_4ch_q0.5_48000.ogg : ok
+    vorbis_4ch_q0.5_32000.ogg : ok
+    vorbis_4ch_q0.5_22050.ogg : ok
+    vorbis_4ch_q0.5_16000.ogg : ok
+    vorbis_4ch_q0.5_96000.ogg : ok
+    vorbis_4ch_q1.5_44100.ogg : ok
+    vorbis_4ch_q1.5_48000.ogg : ok
+    vorbis_4ch_q1.5_32000.ogg : ok
+    vorbis_4ch_q1.5_22050.ogg : ok
+    vorbis_4ch_q1.5_16000.ogg : ok
+    vorbis_4ch_q1.5_96000.ogg : ok
+    vorbis_4ch_q2.5_44100.ogg : ok
+    vorbis_4ch_q2.5_48000.ogg : ok
+    vorbis_4ch_q2.5_32000.ogg : ok
+    vorbis_4ch_q2.5_22050.ogg : ok
+    vorbis_4ch_q2.5_16000.ogg : ok
+    vorbis_4ch_q2.5_96000.ogg : ok
+    vorbis_4ch_q3.5_44100.ogg : ok
+    vorbis_4ch_q3.5_48000.ogg : ok
+    vorbis_4ch_q3.5_32000.ogg : ok
+    vorbis_4ch_q3.5_22050.ogg : ok
+    vorbis_4ch_q3.5_16000.ogg : ok
+    vorbis_4ch_q3.5_96000.ogg : ok
+    vorbis_4ch_q4.5_44100.ogg : ok
+    vorbis_4ch_q4.5_48000.ogg : ok
+    vorbis_4ch_q4.5_32000.ogg : ok
+    vorbis_4ch_q4.5_22050.ogg : ok
+    vorbis_4ch_q4.5_16000.ogg : ok
+    vorbis_4ch_q4.5_96000.ogg : ok
+    vorbis_4ch_q5.5_44100.ogg : ok
+    vorbis_4ch_q5.5_48000.ogg : ok
+    vorbis_4ch_q5.5_32000.ogg : ok
+    vorbis_4ch_q5.5_22050.ogg : ok
+    vorbis_4ch_q5.5_16000.ogg : ok
+    vorbis_4ch_q5.5_96000.ogg : ok
+    vorbis_4ch_q6.5_44100.ogg : ok
+    vorbis_4ch_q6.5_48000.ogg : ok
+    vorbis_4ch_q6.5_32000.ogg : ok
+    vorbis_4ch_q6.5_22050.ogg : ok
+    vorbis_4ch_q6.5_16000.ogg : ok
+    vorbis_4ch_q6.5_96000.ogg : ok
+    vorbis_4ch_q7.5_44100.ogg : ok
+    vorbis_4ch_q7.5_48000.ogg : ok
+    vorbis_4ch_q7.5_32000.ogg : ok
+    vorbis_4ch_q7.5_22050.ogg : ok
+    vorbis_4ch_q7.5_16000.ogg : ok
+    vorbis_4ch_q7.5_96000.ogg : ok
+    vorbis_4ch_q8.5_44100.ogg : ok
+    vorbis_4ch_q8.5_48000.ogg : ok
+    vorbis_4ch_q8.5_32000.ogg : ok
+    vorbis_4ch_q8.5_22050.ogg : ok
+    vorbis_4ch_q8.5_16000.ogg : ok
+    vorbis_4ch_q8.5_96000.ogg : ok
+    vorbis_4ch_q9.5_44100.ogg : ok
+    vorbis_4ch_q9.5_48000.ogg : ok
+    vorbis_4ch_q9.5_32000.ogg : ok
+    vorbis_4ch_q9.5_22050.ogg : ok
+    vorbis_4ch_q9.5_16000.ogg : ok
+    vorbis_4ch_q9.5_96000.ogg : ok
+
+Testing 5 channels
+
+    vorbis_5ch_q-0.5_44100.ogg : ok
+    vorbis_5ch_q-0.5_48000.ogg : ok
+    vorbis_5ch_q-0.5_32000.ogg : ok
+    vorbis_5ch_q-0.5_22050.ogg : ok
+    vorbis_5ch_q-0.5_16000.ogg : ok
+    vorbis_5ch_q-0.5_96000.ogg : ok
+    vorbis_5ch_q0.5_44100.ogg : ok
+    vorbis_5ch_q0.5_48000.ogg : ok
+    vorbis_5ch_q0.5_32000.ogg : ok
+    vorbis_5ch_q0.5_22050.ogg : ok
+    vorbis_5ch_q0.5_16000.ogg : ok
+    vorbis_5ch_q0.5_96000.ogg : ok
+    vorbis_5ch_q1.5_44100.ogg : ok
+    vorbis_5ch_q1.5_48000.ogg : ok
+    vorbis_5ch_q1.5_32000.ogg : ok
+    vorbis_5ch_q1.5_22050.ogg : ok
+    vorbis_5ch_q1.5_16000.ogg : ok
+    vorbis_5ch_q1.5_96000.ogg : ok
+    vorbis_5ch_q2.5_44100.ogg : ok
+    vorbis_5ch_q2.5_48000.ogg : ok
+    vorbis_5ch_q2.5_32000.ogg : ok
+    vorbis_5ch_q2.5_22050.ogg : ok
+    vorbis_5ch_q2.5_16000.ogg : ok
+    vorbis_5ch_q2.5_96000.ogg : ok
+    vorbis_5ch_q3.5_44100.ogg : ok
+    vorbis_5ch_q3.5_48000.ogg : ok
+    vorbis_5ch_q3.5_32000.ogg : ok
+    vorbis_5ch_q3.5_22050.ogg : ok
+    vorbis_5ch_q3.5_16000.ogg : ok
+    vorbis_5ch_q3.5_96000.ogg : ok
+    vorbis_5ch_q4.5_44100.ogg : ok
+    vorbis_5ch_q4.5_48000.ogg : ok
+    vorbis_5ch_q4.5_32000.ogg : ok
+    vorbis_5ch_q4.5_22050.ogg : ok
+    vorbis_5ch_q4.5_16000.ogg : ok
+    vorbis_5ch_q4.5_96000.ogg : ok
+    vorbis_5ch_q5.5_44100.ogg : ok
+    vorbis_5ch_q5.5_48000.ogg : ok
+    vorbis_5ch_q5.5_32000.ogg : ok
+    vorbis_5ch_q5.5_22050.ogg : ok
+    vorbis_5ch_q5.5_16000.ogg : ok
+    vorbis_5ch_q5.5_96000.ogg : ok
+    vorbis_5ch_q6.5_44100.ogg : ok
+    vorbis_5ch_q6.5_48000.ogg : ok
+    vorbis_5ch_q6.5_32000.ogg : ok
+    vorbis_5ch_q6.5_22050.ogg : ok
+    vorbis_5ch_q6.5_16000.ogg : ok
+    vorbis_5ch_q6.5_96000.ogg : ok
+    vorbis_5ch_q7.5_44100.ogg : ok
+    vorbis_5ch_q7.5_48000.ogg : ok
+    vorbis_5ch_q7.5_32000.ogg : ok
+    vorbis_5ch_q7.5_22050.ogg : ok
+    vorbis_5ch_q7.5_16000.ogg : ok
+    vorbis_5ch_q7.5_96000.ogg : ok
+    vorbis_5ch_q8.5_44100.ogg : ok
+    vorbis_5ch_q8.5_48000.ogg : ok
+    vorbis_5ch_q8.5_32000.ogg : ok
+    vorbis_5ch_q8.5_22050.ogg : ok
+    vorbis_5ch_q8.5_16000.ogg : ok
+    vorbis_5ch_q8.5_96000.ogg : ok
+    vorbis_5ch_q9.5_44100.ogg : ok
+    vorbis_5ch_q9.5_48000.ogg : ok
+    vorbis_5ch_q9.5_32000.ogg : ok
+    vorbis_5ch_q9.5_22050.ogg : ok
+    vorbis_5ch_q9.5_16000.ogg : ok
+    vorbis_5ch_q9.5_96000.ogg : ok
+
+Testing 6 channels
+
+    vorbis_6ch_q-0.5_44100.ogg : ok
+    vorbis_6ch_q-0.5_48000.ogg : ok
+    vorbis_6ch_q-0.5_32000.ogg : ok
+    vorbis_6ch_q-0.5_22050.ogg : ok
+    vorbis_6ch_q-0.5_16000.ogg : ok
+    vorbis_6ch_q-0.5_96000.ogg : ok
+    vorbis_6ch_q0.5_44100.ogg : ok
+    vorbis_6ch_q0.5_48000.ogg : ok
+    vorbis_6ch_q0.5_32000.ogg : ok
+    vorbis_6ch_q0.5_22050.ogg : ok
+    vorbis_6ch_q0.5_16000.ogg : ok
+    vorbis_6ch_q0.5_96000.ogg : ok
+    vorbis_6ch_q1.5_44100.ogg : ok
+    vorbis_6ch_q1.5_48000.ogg : ok
+    vorbis_6ch_q1.5_32000.ogg : ok
+    vorbis_6ch_q1.5_22050.ogg : ok
+    vorbis_6ch_q1.5_16000.ogg : ok
+    vorbis_6ch_q1.5_96000.ogg : ok
+    vorbis_6ch_q2.5_44100.ogg : ok
+    vorbis_6ch_q2.5_48000.ogg : ok
+    vorbis_6ch_q2.5_32000.ogg : ok
+    vorbis_6ch_q2.5_22050.ogg : ok
+    vorbis_6ch_q2.5_16000.ogg : ok
+    vorbis_6ch_q2.5_96000.ogg : ok
+    vorbis_6ch_q3.5_44100.ogg : ok
+    vorbis_6ch_q3.5_48000.ogg : ok
+    vorbis_6ch_q3.5_32000.ogg : ok
+    vorbis_6ch_q3.5_22050.ogg : ok
+    vorbis_6ch_q3.5_16000.ogg : ok
+    vorbis_6ch_q3.5_96000.ogg : ok
+    vorbis_6ch_q4.5_44100.ogg : ok
+    vorbis_6ch_q4.5_48000.ogg : ok
+    vorbis_6ch_q4.5_32000.ogg : ok
+    vorbis_6ch_q4.5_22050.ogg : ok
+    vorbis_6ch_q4.5_16000.ogg : ok
+    vorbis_6ch_q4.5_96000.ogg : ok
+    vorbis_6ch_q5.5_44100.ogg : ok
+    vorbis_6ch_q5.5_48000.ogg : ok
+    vorbis_6ch_q5.5_32000.ogg : ok
+    vorbis_6ch_q5.5_22050.ogg : ok
+    vorbis_6ch_q5.5_16000.ogg : ok
+    vorbis_6ch_q5.5_96000.ogg : ok
+    vorbis_6ch_q6.5_44100.ogg : ok
+    vorbis_6ch_q6.5_48000.ogg : ok
+    vorbis_6ch_q6.5_32000.ogg : ok
+    vorbis_6ch_q6.5_22050.ogg : ok
+    vorbis_6ch_q6.5_16000.ogg : ok
+    vorbis_6ch_q6.5_96000.ogg : ok
+    vorbis_6ch_q7.5_44100.ogg : ok
+    vorbis_6ch_q7.5_48000.ogg : ok
+    vorbis_6ch_q7.5_32000.ogg : ok
+    vorbis_6ch_q7.5_22050.ogg : ok
+    vorbis_6ch_q7.5_16000.ogg : ok
+    vorbis_6ch_q7.5_96000.ogg : ok
+    vorbis_6ch_q8.5_44100.ogg : ok
+    vorbis_6ch_q8.5_48000.ogg : ok
+    vorbis_6ch_q8.5_32000.ogg : ok
+    vorbis_6ch_q8.5_22050.ogg : ok
+    vorbis_6ch_q8.5_16000.ogg : ok
+    vorbis_6ch_q8.5_96000.ogg : ok
+    vorbis_6ch_q9.5_44100.ogg : ok
+    vorbis_6ch_q9.5_48000.ogg : ok
+    vorbis_6ch_q9.5_32000.ogg : ok
+    vorbis_6ch_q9.5_22050.ogg : ok
+    vorbis_6ch_q9.5_16000.ogg : ok
+    vorbis_6ch_q9.5_96000.ogg : ok
+
+Testing 7 channels
+
+    vorbis_7ch_q-0.5_44100.ogg : ok
+    vorbis_7ch_q-0.5_48000.ogg : ok
+    vorbis_7ch_q-0.5_32000.ogg : ok
+    vorbis_7ch_q-0.5_22050.ogg : ok
+    vorbis_7ch_q-0.5_16000.ogg : ok
+    vorbis_7ch_q-0.5_96000.ogg : ok
+    vorbis_7ch_q0.5_44100.ogg : ok
+    vorbis_7ch_q0.5_48000.ogg : ok
+    vorbis_7ch_q0.5_32000.ogg : ok
+    vorbis_7ch_q0.5_22050.ogg : ok
+    vorbis_7ch_q0.5_16000.ogg : ok
+    vorbis_7ch_q0.5_96000.ogg : ok
+    vorbis_7ch_q1.5_44100.ogg : ok
+    vorbis_7ch_q1.5_48000.ogg : ok
+    vorbis_7ch_q1.5_32000.ogg : ok
+    vorbis_7ch_q1.5_22050.ogg : ok
+    vorbis_7ch_q1.5_16000.ogg : ok
+    vorbis_7ch_q1.5_96000.ogg : ok
+    vorbis_7ch_q2.5_44100.ogg : ok
+    vorbis_7ch_q2.5_48000.ogg : ok
+    vorbis_7ch_q2.5_32000.ogg : ok
+    vorbis_7ch_q2.5_22050.ogg : ok
+    vorbis_7ch_q2.5_16000.ogg : ok
+    vorbis_7ch_q2.5_96000.ogg : ok
+    vorbis_7ch_q3.5_44100.ogg : ok
+    vorbis_7ch_q3.5_48000.ogg : ok
+    vorbis_7ch_q3.5_32000.ogg : ok
+    vorbis_7ch_q3.5_22050.ogg : ok
+    vorbis_7ch_q3.5_16000.ogg : ok
+    vorbis_7ch_q3.5_96000.ogg : ok
+    vorbis_7ch_q4.5_44100.ogg : ok
+    vorbis_7ch_q4.5_48000.ogg : ok
+    vorbis_7ch_q4.5_32000.ogg : ok
+    vorbis_7ch_q4.5_22050.ogg : ok
+    vorbis_7ch_q4.5_16000.ogg : ok
+    vorbis_7ch_q4.5_96000.ogg : ok
+    vorbis_7ch_q5.5_44100.ogg : ok
+    vorbis_7ch_q5.5_48000.ogg : ok
+    vorbis_7ch_q5.5_32000.ogg : ok
+    vorbis_7ch_q5.5_22050.ogg : ok
+    vorbis_7ch_q5.5_16000.ogg : ok
+    vorbis_7ch_q5.5_96000.ogg : ok
+    vorbis_7ch_q6.5_44100.ogg : ok
+    vorbis_7ch_q6.5_48000.ogg : ok
+    vorbis_7ch_q6.5_32000.ogg : ok
+    vorbis_7ch_q6.5_22050.ogg : ok
+    vorbis_7ch_q6.5_16000.ogg : ok
+    vorbis_7ch_q6.5_96000.ogg : ok
+    vorbis_7ch_q7.5_44100.ogg : ok
+    vorbis_7ch_q7.5_48000.ogg : ok
+    vorbis_7ch_q7.5_32000.ogg : ok
+    vorbis_7ch_q7.5_22050.ogg : ok
+    vorbis_7ch_q7.5_16000.ogg : ok
+    vorbis_7ch_q7.5_96000.ogg : ok
+    vorbis_7ch_q8.5_44100.ogg : ok
+    vorbis_7ch_q8.5_48000.ogg : ok
+    vorbis_7ch_q8.5_32000.ogg : ok
+    vorbis_7ch_q8.5_22050.ogg : ok
+    vorbis_7ch_q8.5_16000.ogg : ok
+    vorbis_7ch_q8.5_96000.ogg : ok
+    vorbis_7ch_q9.5_44100.ogg : ok
+    vorbis_7ch_q9.5_48000.ogg : ok
+    vorbis_7ch_q9.5_32000.ogg : ok
+    vorbis_7ch_q9.5_22050.ogg : ok
+    vorbis_7ch_q9.5_16000.ogg : ok
+    vorbis_7ch_q9.5_96000.ogg : ok
+
+Testing 8 channels
+
+    vorbis_8ch_q-0.5_44100.ogg : ok
+    vorbis_8ch_q-0.5_48000.ogg : ok
+    vorbis_8ch_q-0.5_32000.ogg : ok
+    vorbis_8ch_q-0.5_22050.ogg : ok
+    vorbis_8ch_q-0.5_16000.ogg : ok
+    vorbis_8ch_q-0.5_96000.ogg : ok
+    vorbis_8ch_q0.5_44100.ogg : ok
+    vorbis_8ch_q0.5_48000.ogg : ok
+    vorbis_8ch_q0.5_32000.ogg : ok
+    vorbis_8ch_q0.5_22050.ogg : ok
+    vorbis_8ch_q0.5_16000.ogg : ok
+    vorbis_8ch_q0.5_96000.ogg : ok
+    vorbis_8ch_q1.5_44100.ogg : ok
+    vorbis_8ch_q1.5_48000.ogg : ok
+    vorbis_8ch_q1.5_32000.ogg : ok
+    vorbis_8ch_q1.5_22050.ogg : ok
+    vorbis_8ch_q1.5_16000.ogg : ok
+    vorbis_8ch_q1.5_96000.ogg : ok
+    vorbis_8ch_q2.5_44100.ogg : ok
+    vorbis_8ch_q2.5_48000.ogg : ok
+    vorbis_8ch_q2.5_32000.ogg : ok
+    vorbis_8ch_q2.5_22050.ogg : ok
+    vorbis_8ch_q2.5_16000.ogg : ok
+    vorbis_8ch_q2.5_96000.ogg : ok
+    vorbis_8ch_q3.5_44100.ogg : ok
+    vorbis_8ch_q3.5_48000.ogg : ok
+    vorbis_8ch_q3.5_32000.ogg : ok
+    vorbis_8ch_q3.5_22050.ogg : ok
+    vorbis_8ch_q3.5_16000.ogg : ok
+    vorbis_8ch_q3.5_96000.ogg : ok
+    vorbis_8ch_q4.5_44100.ogg : ok
+    vorbis_8ch_q4.5_48000.ogg : ok
+    vorbis_8ch_q4.5_32000.ogg : ok
+    vorbis_8ch_q4.5_22050.ogg : ok
+    vorbis_8ch_q4.5_16000.ogg : ok
+    vorbis_8ch_q4.5_96000.ogg : ok
+    vorbis_8ch_q5.5_44100.ogg : ok
+    vorbis_8ch_q5.5_48000.ogg : ok
+    vorbis_8ch_q5.5_32000.ogg : ok
+    vorbis_8ch_q5.5_22050.ogg : ok
+    vorbis_8ch_q5.5_16000.ogg : ok
+    vorbis_8ch_q5.5_96000.ogg : ok
+    vorbis_8ch_q6.5_44100.ogg : ok
+    vorbis_8ch_q6.5_48000.ogg : ok
+    vorbis_8ch_q6.5_32000.ogg : ok
+    vorbis_8ch_q6.5_22050.ogg : ok
+    vorbis_8ch_q6.5_16000.ogg : ok
+    vorbis_8ch_q6.5_96000.ogg : ok
+    vorbis_8ch_q7.5_44100.ogg : ok
+    vorbis_8ch_q7.5_48000.ogg : ok
+    vorbis_8ch_q7.5_32000.ogg : ok
+    vorbis_8ch_q7.5_22050.ogg : ok
+    vorbis_8ch_q7.5_16000.ogg : ok
+    vorbis_8ch_q7.5_96000.ogg : ok
+    vorbis_8ch_q8.5_44100.ogg : ok
+    vorbis_8ch_q8.5_48000.ogg : ok
+    vorbis_8ch_q8.5_32000.ogg : ok
+    vorbis_8ch_q8.5_22050.ogg : ok
+    vorbis_8ch_q8.5_16000.ogg : ok
+    vorbis_8ch_q8.5_96000.ogg : ok
+    vorbis_8ch_q9.5_44100.ogg : ok
+    vorbis_8ch_q9.5_48000.ogg : ok
+    vorbis_8ch_q9.5_32000.ogg : ok
+    vorbis_8ch_q9.5_22050.ogg : ok
+    vorbis_8ch_q9.5_16000.ogg : ok
+    vorbis_8ch_q9.5_96000.ogg : ok
+
+==== Configuring plain build for valgrind ====
+-- Configuring vorbis 1.3.7
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/ys/feedback/uidreczz28ZAeUf6VCJ/build-memcheck-plain
+[ 67%] Built target vorbis
+[ 74%] Built target vorbisfile
+[ 80%] Built target test_codebook
+[ 87%] Built target vorbisenc
+[100%] Built target vorbis_test
+
+==== Running test_codebook under valgrind memcheck ====
+Testing codebooks with large entry counts across multiple dim values...
+
+  dim=0, entries=8388608 (ov_ilog check: 0+24=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=1, entries=8388607 (ov_ilog check: 1+23=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=2, entries=4194303 (ov_ilog check: 2+22=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=4, entries=2097151 (ov_ilog check: 3+21=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=8, entries=1048575 (ov_ilog check: 4+20=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=16, entries=524287 (ov_ilog check: 5+19=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=32, entries=262143 (ov_ilog check: 6+18=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+  dim=64, entries=131071 (ov_ilog check: 7+17=24)...
+    Setup header accepted, calling vorbis_synthesis_init...
+    PASS: vorbis_synthesis_init returned cleanly (ret=1)
+
+8/8 tests passed.
+All tests passed.
+
+==== Running full encode/decode suite under valgrind memcheck ====
+
+Testing 1 channel
+
+    vorbis_1ch_q-0.5_44100.ogg : ok
+    vorbis_1ch_q-0.5_48000.ogg : ok
+    vorbis_1ch_q-0.5_32000.ogg : ok
+    vorbis_1ch_q-0.5_22050.ogg : ok
+    vorbis_1ch_q-0.5_16000.ogg : ok
+    vorbis_1ch_q-0.5_96000.ogg : ok
+    vorbis_1ch_q0.5_44100.ogg : ok
+    vorbis_1ch_q0.5_48000.ogg : ok
+    vorbis_1ch_q0.5_32000.ogg : ok
+    vorbis_1ch_q0.5_22050.ogg : ok
+    vorbis_1ch_q0.5_16000.ogg : ok
+    vorbis_1ch_q0.5_96000.ogg : ok
+    vorbis_1ch_q1.5_44100.ogg : ok
+    vorbis_1ch_q1.5_48000.ogg : ok
+    vorbis_1ch_q1.5_32000.ogg : ok
+    vorbis_1ch_q1.5_22050.ogg : ok
+    vorbis_1ch_q1.5_16000.ogg : ok
+    vorbis_1ch_q1.5_96000.ogg : ok
+    vorbis_1ch_q2.5_44100.ogg : ok
+    vorbis_1ch_q2.5_48000.ogg : ok
+    vorbis_1ch_q2.5_32000.ogg : ok
+    vorbis_1ch_q2.5_22050.ogg : ok
+    vorbis_1ch_q2.5_16000.ogg : ok
+    vorbis_1ch_q2.5_96000.ogg : ok
+    vorbis_1ch_q3.5_44100.ogg : ok
+    vorbis_1ch_q3.5_48000.ogg : ok
+    vorbis_1ch_q3.5_32000.ogg : ok
+    vorbis_1ch_q3.5_22050.ogg : ok
+    vorbis_1ch_q3.5_16000.ogg : ok
+    vorbis_1ch_q3.5_96000.ogg : ok
+    vorbis_1ch_q4.5_44100.ogg : ok
+    vorbis_1ch_q4.5_48000.ogg : ok
+    vorbis_1ch_q4.5_32000.ogg : ok
+    vorbis_1ch_q4.5_22050.ogg : ok
+    vorbis_1ch_q4.5_16000.ogg : ok
+    vorbis_1ch_q4.5_96000.ogg : ok
+    vorbis_1ch_q5.5_44100.ogg : ok
+    vorbis_1ch_q5.5_48000.ogg : ok
+    vorbis_1ch_q5.5_32000.ogg : ok
+    vorbis_1ch_q5.5_22050.ogg : ok
+    vorbis_1ch_q5.5_16000.ogg : ok
+    vorbis_1ch_q5.5_96000.ogg : ok
+    vorbis_1ch_q6.5_44100.ogg : ok
+    vorbis_1ch_q6.5_48000.ogg : ok
+    vorbis_1ch_q6.5_32000.ogg : ok
+    vorbis_1ch_q6.5_22050.ogg : ok
+    vorbis_1ch_q6.5_16000.ogg : ok
+    vorbis_1ch_q6.5_96000.ogg : ok
+    vorbis_1ch_q7.5_44100.ogg : ok
+    vorbis_1ch_q7.5_48000.ogg : ok
+    vorbis_1ch_q7.5_32000.ogg : ok
+    vorbis_1ch_q7.5_22050.ogg : ok
+    vorbis_1ch_q7.5_16000.ogg : ok
+    vorbis_1ch_q7.5_96000.ogg : ok
+    vorbis_1ch_q8.5_44100.ogg : ok
+    vorbis_1ch_q8.5_48000.ogg : ok
+    vorbis_1ch_q8.5_32000.ogg : ok
+    vorbis_1ch_q8.5_22050.ogg : ok
+    vorbis_1ch_q8.5_16000.ogg : ok
+    vorbis_1ch_q8.5_96000.ogg : ok
+    vorbis_1ch_q9.5_44100.ogg : ok
+    vorbis_1ch_q9.5_48000.ogg : ok
+    vorbis_1ch_q9.5_32000.ogg : ok
+    vorbis_1ch_q9.5_22050.ogg : ok
+    vorbis_1ch_q9.5_16000.ogg : ok
+    vorbis_1ch_q9.5_96000.ogg : ok
+
+Testing 2 channels
+
+    vorbis_2ch_q-0.5_44100.ogg : ok
+    vorbis_2ch_q-0.5_48000.ogg : ok
+    vorbis_2ch_q-0.5_32000.ogg : ok
+    vorbis_2ch_q-0.5_22050.ogg : ok
+    vorbis_2ch_q-0.5_16000.ogg : ok
+    vorbis_2ch_q-0.5_96000.ogg : ok
+    vorbis_2ch_q0.5_44100.ogg : ok
+    vorbis_2ch_q0.5_48000.ogg : ok
+    vorbis_2ch_q0.5_32000.ogg : ok
+    vorbis_2ch_q0.5_22050.ogg : ok
+    vorbis_2ch_q0.5_16000.ogg : ok
+    vorbis_2ch_q0.5_96000.ogg : ok
+    vorbis_2ch_q1.5_44100.ogg : ok
+    vorbis_2ch_q1.5_48000.ogg : ok
+    vorbis_2ch_q1.5_32000.ogg : ok
+    vorbis_2ch_q1.5_22050.ogg : ok
+    vorbis_2ch_q1.5_16000.ogg : ok
+    vorbis_2ch_q1.5_96000.ogg : ok
+    vorbis_2ch_q2.5_44100.ogg : ok
+    vorbis_2ch_q2.5_48000.ogg : ok
+    vorbis_2ch_q2.5_32000.ogg : ok
+    vorbis_2ch_q2.5_22050.ogg : ok
+    vorbis_2ch_q2.5_16000.ogg : ok
+    vorbis_2ch_q2.5_96000.ogg : ok
+    vorbis_2ch_q3.5_44100.ogg : ok
+    vorbis_2ch_q3.5_48000.ogg : ok
+    vorbis_2ch_q3.5_32000.ogg : ok
+    vorbis_2ch_q3.5_22050.ogg : ok
+    vorbis_2ch_q3.5_16000.ogg : ok
+    vorbis_2ch_q3.5_96000.ogg : ok
+    vorbis_2ch_q4.5_44100.ogg : ok
+    vorbis_2ch_q4.5_48000.ogg : ok
+    vorbis_2ch_q4.5_32000.ogg : ok
+    vorbis_2ch_q4.5_22050.ogg : ok
+    vorbis_2ch_q4.5_16000.ogg : ok
+    vorbis_2ch_q4.5_96000.ogg : ok
+    vorbis_2ch_q5.5_44100.ogg : ok
+    vorbis_2ch_q5.5_48000.ogg : ok
+    vorbis_2ch_q5.5_32000.ogg : ok
+    vorbis_2ch_q5.5_22050.ogg : ok
+    vorbis_2ch_q5.5_16000.ogg : ok
+    vorbis_2ch_q5.5_96000.ogg : ok
+    vorbis_2ch_q6.5_44100.ogg : ok
+    vorbis_2ch_q6.5_48000.ogg : ok
+    vorbis_2ch_q6.5_32000.ogg : ok
+    vorbis_2ch_q6.5_22050.ogg : ok
+    vorbis_2ch_q6.5_16000.ogg : ok
+    vorbis_2ch_q6.5_96000.ogg : ok
+    vorbis_2ch_q7.5_44100.ogg : ok
+    vorbis_2ch_q7.5_48000.ogg : ok
+    vorbis_2ch_q7.5_32000.ogg : ok
+    vorbis_2ch_q7.5_22050.ogg : ok
+    vorbis_2ch_q7.5_16000.ogg : ok
+    vorbis_2ch_q7.5_96000.ogg : ok
+    vorbis_2ch_q8.5_44100.ogg : ok
+    vorbis_2ch_q8.5_48000.ogg : ok
+    vorbis_2ch_q8.5_32000.ogg : ok
+    vorbis_2ch_q8.5_22050.ogg : ok
+    vorbis_2ch_q8.5_16000.ogg : ok
+    vorbis_2ch_q8.5_96000.ogg : ok
+    vorbis_2ch_q9.5_44100.ogg : ok
+    vorbis_2ch_q9.5_48000.ogg : ok
+    vorbis_2ch_q9.5_32000.ogg : ok
+    vorbis_2ch_q9.5_22050.ogg : ok
+    vorbis_2ch_q9.5_16000.ogg : ok
+    vorbis_2ch_q9.5_96000.ogg : ok
+
+Testing 3 channels
+
+    vorbis_3ch_q-0.5_44100.ogg : ok
+    vorbis_3ch_q-0.5_48000.ogg : ok
+    vorbis_3ch_q-0.5_32000.ogg : ok
+    vorbis_3ch_q-0.5_22050.ogg : ok
+    vorbis_3ch_q-0.5_16000.ogg : ok
+    vorbis_3ch_q-0.5_96000.ogg : ok
+    vorbis_3ch_q0.5_44100.ogg : ok
+    vorbis_3ch_q0.5_48000.ogg : ok
+    vorbis_3ch_q0.5_32000.ogg : ok
+    vorbis_3ch_q0.5_22050.ogg : ok
+    vorbis_3ch_q0.5_16000.ogg : ok
+    vorbis_3ch_q0.5_96000.ogg : ok
+    vorbis_3ch_q1.5_44100.ogg : ok
+    vorbis_3ch_q1.5_48000.ogg : ok
+    vorbis_3ch_q1.5_32000.ogg : ok
+    vorbis_3ch_q1.5_22050.ogg : ok
+    vorbis_3ch_q1.5_16000.ogg : ok
+    vorbis_3ch_q1.5_96000.ogg : ok
+    vorbis_3ch_q2.5_44100.ogg : ok
+    vorbis_3ch_q2.5_48000.ogg : ok
+    vorbis_3ch_q2.5_32000.ogg : ok
+    vorbis_3ch_q2.5_22050.ogg : ok
+    vorbis_3ch_q2.5_16000.ogg : ok
+    vorbis_3ch_q2.5_96000.ogg : ok
+    vorbis_3ch_q3.5_44100.ogg : ok
+    vorbis_3ch_q3.5_48000.ogg : ok
+    vorbis_3ch_q3.5_32000.ogg : ok
+    vorbis_3ch_q3.5_22050.ogg : ok
+    vorbis_3ch_q3.5_16000.ogg : ok
+    vorbis_3ch_q3.5_96000.ogg : ok
+    vorbis_3ch_q4.5_44100.ogg : ok
+    vorbis_3ch_q4.5_48000.ogg : ok
+    vorbis_3ch_q4.5_32000.ogg : ok
+    vorbis_3ch_q4.5_22050.ogg : ok
+    vorbis_3ch_q4.5_16000.ogg : ok
+    vorbis_3ch_q4.5_96000.ogg : ok
+    vorbis_3ch_q5.5_44100.ogg : ok
+    vorbis_3ch_q5.5_48000.ogg : ok
+    vorbis_3ch_q5.5_32000.ogg : ok
+    vorbis_3ch_q5.5_22050.ogg : ok
+    vorbis_3ch_q5.5_16000.ogg : ok
+    vorbis_3ch_q5.5_96000.ogg : ok
+    vorbis_3ch_q6.5_44100.ogg : ok
+    vorbis_3ch_q6.5_48000.ogg : ok
+    vorbis_3ch_q6.5_32000.ogg : ok
+    vorbis_3ch_q6.5_22050.ogg : ok
+    vorbis_3ch_q6.5_16000.ogg : ok
+    vorbis_3ch_q6.5_96000.ogg : ok
+    vorbis_3ch_q7.5_44100.ogg : ok
+    vorbis_3ch_q7.5_48000.ogg : ok
+    vorbis_3ch_q7.5_32000.ogg : ok
+    vorbis_3ch_q7.5_22050.ogg : ok
+    vorbis_3ch_q7.5_16000.ogg : ok
+    vorbis_3ch_q7.5_96000.ogg : ok
+    vorbis_3ch_q8.5_44100.ogg : ok
+    vorbis_3ch_q8.5_48000.ogg : ok
+    vorbis_3ch_q8.5_32000.ogg : ok
+    vorbis_3ch_q8.5_22050.ogg : ok
+    vorbis_3ch_q8.5_16000.ogg : ok
+    vorbis_3ch_q8.5_96000.ogg : ok
+    vorbis_3ch_q9.5_44100.ogg : ok
+    vorbis_3ch_q9.5_48000.ogg : ok
+    vorbis_3ch_q9.5_32000.ogg : ok
+    vorbis_3ch_q9.5_22050.ogg : ok
+    vorbis_3ch_q9.5_16000.ogg : ok
+    vorbis_3ch_q9.5_96000.ogg : ok
+
+Testing 4 channels
+
+    vorbis_4ch_q-0.5_44100.ogg : ok
+    vorbis_4ch_q-0.5_48000.ogg : ok
+    vorbis_4ch_q-0.5_32000.ogg : ok
+    vorbis_4ch_q-0.5_22050.ogg : ok
+    vorbis_4ch_q-0.5_16000.ogg : ok
+    vorbis_4ch_q-0.5_96000.ogg : ok
+    vorbis_4ch_q0.5_44100.ogg : ok
+    vorbis_4ch_q0.5_48000.ogg : ok
+    vorbis_4ch_q0.5_32000.ogg : ok
+    vorbis_4ch_q0.5_22050.ogg : ok
+    vorbis_4ch_q0.5_16000.ogg : ok
+    vorbis_4ch_q0.5_96000.ogg : ok
+    vorbis_4ch_q1.5_44100.ogg : ok
+    vorbis_4ch_q1.5_48000.ogg : ok
+    vorbis_4ch_q1.5_32000.ogg : ok
+    vorbis_4ch_q1.5_22050.ogg : ok
+    vorbis_4ch_q1.5_16000.ogg : ok
+    vorbis_4ch_q1.5_96000.ogg : ok
+    vorbis_4ch_q2.5_44100.ogg : ok
+    vorbis_4ch_q2.5_48000.ogg : ok
+    vorbis_4ch_q2.5_32000.ogg : ok
+    vorbis_4ch_q2.5_22050.ogg : ok
+    vorbis_4ch_q2.5_16000.ogg : ok
+    vorbis_4ch_q2.5_96000.ogg : ok
+    vorbis_4ch_q3.5_44100.ogg : ok
+    vorbis_4ch_q3.5_48000.ogg : ok
+    vorbis_4ch_q3.5_32000.ogg : ok
+    vorbis_4ch_q3.5_22050.ogg : ok
+    vorbis_4ch_q3.5_16000.ogg : ok
+    vorbis_4ch_q3.5_96000.ogg : ok
+    vorbis_4ch_q4.5_44100.ogg : ok
+    vorbis_4ch_q4.5_48000.ogg : ok
+    vorbis_4ch_q4.5_32000.ogg : ok
+    vorbis_4ch_q4.5_22050.ogg : ok
+    vorbis_4ch_q4.5_16000.ogg : ok
+    vorbis_4ch_q4.5_96000.ogg : ok
+    vorbis_4ch_q5.5_44100.ogg : ok
+    vorbis_4ch_q5.5_48000.ogg : ok
+    vorbis_4ch_q5.5_32000.ogg : ok
+    vorbis_4ch_q5.5_22050.ogg : ok
+    vorbis_4ch_q5.5_16000.ogg : ok
+    vorbis_4ch_q5.5_96000.ogg : ok
+    vorbis_4ch_q6.5_44100.ogg : ok
+    vorbis_4ch_q6.5_48000.ogg : ok
+    vorbis_4ch_q6.5_32000.ogg : ok
+    vorbis_4ch_q6.5_22050.ogg : ok
+    vorbis_4ch_q6.5_16000.ogg : ok
+    vorbis_4ch_q6.5_96000.ogg : ok
+    vorbis_4ch_q7.5_44100.ogg : ok
+    vorbis_4ch_q7.5_48000.ogg : ok
+    vorbis_4ch_q7.5_32000.ogg : ok
+    vorbis_4ch_q7.5_22050.ogg : ok
+    vorbis_4ch_q7.5_16000.ogg : ok
+    vorbis_4ch_q7.5_96000.ogg : ok
+    vorbis_4ch_q8.5_44100.ogg : ok
+    vorbis_4ch_q8.5_48000.ogg : ok
+    vorbis_4ch_q8.5_32000.ogg : ok
+    vorbis_4ch_q8.5_22050.ogg : ok
+    vorbis_4ch_q8.5_16000.ogg : ok
+    vorbis_4ch_q8.5_96000.ogg : ok
+    vorbis_4ch_q9.5_44100.ogg : ok
+    vorbis_4ch_q9.5_48000.ogg : ok
+    vorbis_4ch_q9.5_32000.ogg : ok
+    vorbis_4ch_q9.5_22050.ogg : ok
+    vorbis_4ch_q9.5_16000.ogg : ok
+    vorbis_4ch_q9.5_96000.ogg : ok
+
+Testing 5 channels
+
+    vorbis_5ch_q-0.5_44100.ogg : ok
+    vorbis_5ch_q-0.5_48000.ogg : ok
+    vorbis_5ch_q-0.5_32000.ogg : ok
+    vorbis_5ch_q-0.5_22050.ogg : ok
+    vorbis_5ch_q-0.5_16000.ogg : ok
+    vorbis_5ch_q-0.5_96000.ogg : ok
+    vorbis_5ch_q0.5_44100.ogg : ok
+    vorbis_5ch_q0.5_48000.ogg : ok
+    vorbis_5ch_q0.5_32000.ogg : ok
+    vorbis_5ch_q0.5_22050.ogg : ok
+    vorbis_5ch_q0.5_16000.ogg : ok
+    vorbis_5ch_q0.5_96000.ogg : ok
+    vorbis_5ch_q1.5_44100.ogg : ok
+    vorbis_5ch_q1.5_48000.ogg : ok
+    vorbis_5ch_q1.5_32000.ogg : ok
+    vorbis_5ch_q1.5_22050.ogg : ok
+    vorbis_5ch_q1.5_16000.ogg : ok
+    vorbis_5ch_q1.5_96000.ogg : ok
+    vorbis_5ch_q2.5_44100.ogg : ok
+    vorbis_5ch_q2.5_48000.ogg : ok
+    vorbis_5ch_q2.5_32000.ogg : ok
+    vorbis_5ch_q2.5_22050.ogg : ok
+    vorbis_5ch_q2.5_16000.ogg : ok
+    vorbis_5ch_q2.5_96000.ogg : ok
+    vorbis_5ch_q3.5_44100.ogg : ok
+    vorbis_5ch_q3.5_48000.ogg : ok
+    vorbis_5ch_q3.5_32000.ogg : ok
+    vorbis_5ch_q3.5_22050.ogg : ok
+    vorbis_5ch_q3.5_16000.ogg : ok
+    vorbis_5ch_q3.5_96000.ogg : ok
+    vorbis_5ch_q4.5_44100.ogg : ok
+    vorbis_5ch_q4.5_48000.ogg : ok
+    vorbis_5ch_q4.5_32000.ogg : ok
+    vorbis_5ch_q4.5_22050.ogg : ok
+    vorbis_5ch_q4.5_16000.ogg : ok
+    vorbis_5ch_q4.5_96000.ogg : ok
+    vorbis_5ch_q5.5_44100.ogg : ok
+    vorbis_5ch_q5.5_48000.ogg : ok
+    vorbis_5ch_q5.5_32000.ogg : ok
+    vorbis_5ch_q5.5_22050.ogg : ok
+    vorbis_5ch_q5.5_16000.ogg : ok
+    vorbis_5ch_q5.5_96000.ogg : ok
+    vorbis_5ch_q6.5_44100.ogg : ok
+    vorbis_5ch_q6.5_48000.ogg : ok
+    vorbis_5ch_q6.5_32000.ogg : ok
+    vorbis_5ch_q6.5_22050.ogg : ok
+    vorbis_5ch_q6.5_16000.ogg : ok
+    vorbis_5ch_q6.5_96000.ogg : ok
+    vorbis_5ch_q7.5_44100.ogg : ok
+    vorbis_5ch_q7.5_48000.ogg : ok
+    vorbis_5ch_q7.5_32000.ogg : ok
+    vorbis_5ch_q7.5_22050.ogg : ok
+    vorbis_5ch_q7.5_16000.ogg : ok
+    vorbis_5ch_q7.5_96000.ogg : ok
+    vorbis_5ch_q8.5_44100.ogg : ok
+    vorbis_5ch_q8.5_48000.ogg : ok
+    vorbis_5ch_q8.5_32000.ogg : ok
+    vorbis_5ch_q8.5_22050.ogg : ok
+    vorbis_5ch_q8.5_16000.ogg : ok
+    vorbis_5ch_q8.5_96000.ogg : ok
+    vorbis_5ch_q9.5_44100.ogg : ok
+    vorbis_5ch_q9.5_48000.ogg : ok
+    vorbis_5ch_q9.5_32000.ogg : ok
+    vorbis_5ch_q9.5_22050.ogg : ok
+    vorbis_5ch_q9.5_16000.ogg : ok
+    vorbis_5ch_q9.5_96000.ogg : ok
+
+Testing 6 channels
+
+    vorbis_6ch_q-0.5_44100.ogg : ok
+    vorbis_6ch_q-0.5_48000.ogg : ok
+    vorbis_6ch_q-0.5_32000.ogg : ok
+    vorbis_6ch_q-0.5_22050.ogg : ok
+    vorbis_6ch_q-0.5_16000.ogg : ok
+    vorbis_6ch_q-0.5_96000.ogg : ok
+    vorbis_6ch_q0.5_44100.ogg : ok
+    vorbis_6ch_q0.5_48000.ogg : ok
+    vorbis_6ch_q0.5_32000.ogg : ok
+    vorbis_6ch_q0.5_22050.ogg : ok
+    vorbis_6ch_q0.5_16000.ogg : ok
+    vorbis_6ch_q0.5_96000.ogg : ok
+    vorbis_6ch_q1.5_44100.ogg : ok
+    vorbis_6ch_q1.5_48000.ogg : ok
+    vorbis_6ch_q1.5_32000.ogg : ok
+    vorbis_6ch_q1.5_22050.ogg : ok
+    vorbis_6ch_q1.5_16000.ogg : ok
+    vorbis_6ch_q1.5_96000.ogg : ok
+    vorbis_6ch_q2.5_44100.ogg : ok
+    vorbis_6ch_q2.5_48000.ogg : ok
+    vorbis_6ch_q2.5_32000.ogg : ok
+    vorbis_6ch_q2.5_22050.ogg : ok
+    vorbis_6ch_q2.5_16000.ogg : ok
+    vorbis_6ch_q2.5_96000.ogg : ok
+    vorbis_6ch_q3.5_44100.ogg : ok
+    vorbis_6ch_q3.5_48000.ogg : ok
+    vorbis_6ch_q3.5_32000.ogg : ok
+    vorbis_6ch_q3.5_22050.ogg : ok
+    vorbis_6ch_q3.5_16000.ogg : ok
+    vorbis_6ch_q3.5_96000.ogg : ok
+    vorbis_6ch_q4.5_44100.ogg : ok
+    vorbis_6ch_q4.5_48000.ogg : ok
+    vorbis_6ch_q4.5_32000.ogg : ok
+    vorbis_6ch_q4.5_22050.ogg : ok
+    vorbis_6ch_q4.5_16000.ogg : ok
+    vorbis_6ch_q4.5_96000.ogg : ok
+    vorbis_6ch_q5.5_44100.ogg : ok
+    vorbis_6ch_q5.5_48000.ogg : ok
+    vorbis_6ch_q5.5_32000.ogg : ok
+    vorbis_6ch_q5.5_22050.ogg : ok
+    vorbis_6ch_q5.5_16000.ogg : ok
+    vorbis_6ch_q5.5_96000.ogg : ok
+    vorbis_6ch_q6.5_44100.ogg : ok
+    vorbis_6ch_q6.5_48000.ogg : ok
+    vorbis_6ch_q6.5_32000.ogg : ok
+    vorbis_6ch_q6.5_22050.ogg : ok
+    vorbis_6ch_q6.5_16000.ogg : ok
+    vorbis_6ch_q6.5_96000.ogg : ok
+    vorbis_6ch_q7.5_44100.ogg : ok
+    vorbis_6ch_q7.5_48000.ogg : ok
+    vorbis_6ch_q7.5_32000.ogg : ok
+    vorbis_6ch_q7.5_22050.ogg : ok
+    vorbis_6ch_q7.5_16000.ogg : ok
+    vorbis_6ch_q7.5_96000.ogg : ok
+    vorbis_6ch_q8.5_44100.ogg : ok
+    vorbis_6ch_q8.5_48000.ogg : ok
+    vorbis_6ch_q8.5_32000.ogg : ok
+    vorbis_6ch_q8.5_22050.ogg : ok
+    vorbis_6ch_q8.5_16000.ogg : ok
+    vorbis_6ch_q8.5_96000.ogg : ok
+    vorbis_6ch_q9.5_44100.ogg : ok
+    vorbis_6ch_q9.5_48000.ogg : ok
+    vorbis_6ch_q9.5_32000.ogg : ok
+    vorbis_6ch_q9.5_22050.ogg : ok
+    vorbis_6ch_q9.5_16000.ogg : ok
+    vorbis_6ch_q9.5_96000.ogg : ok
+
+Testing 7 channels
+
+    vorbis_7ch_q-0.5_44100.ogg : ok
+    vorbis_7ch_q-0.5_48000.ogg : ok
+    vorbis_7ch_q-0.5_32000.ogg : ok
+    vorbis_7ch_q-0.5_22050.ogg : ok
+    vorbis_7ch_q-0.5_16000.ogg : ok
+    vorbis_7ch_q-0.5_96000.ogg : ok
+    vorbis_7ch_q0.5_44100.ogg : ok
+    vorbis_7ch_q0.5_48000.ogg : ok
+    vorbis_7ch_q0.5_32000.ogg : ok
+    vorbis_7ch_q0.5_22050.ogg : ok
+    vorbis_7ch_q0.5_16000.ogg : ok
+    vorbis_7ch_q0.5_96000.ogg : ok
+    vorbis_7ch_q1.5_44100.ogg : ok
+    vorbis_7ch_q1.5_48000.ogg : ok
+    vorbis_7ch_q1.5_32000.ogg : ok
+    vorbis_7ch_q1.5_22050.ogg : ok
+    vorbis_7ch_q1.5_16000.ogg : ok
+    vorbis_7ch_q1.5_96000.ogg : ok
+    vorbis_7ch_q2.5_44100.ogg : ok
+    vorbis_7ch_q2.5_48000.ogg : ok
+    vorbis_7ch_q2.5_32000.ogg : ok
+    vorbis_7ch_q2.5_22050.ogg : ok
+    vorbis_7ch_q2.5_16000.ogg : ok
+    vorbis_7ch_q2.5_96000.ogg : ok
+    vorbis_7ch_q3.5_44100.ogg : ok
+    vorbis_7ch_q3.5_48000.ogg : ok
+    vorbis_7ch_q3.5_32000.ogg : ok
+    vorbis_7ch_q3.5_22050.ogg : ok
+    vorbis_7ch_q3.5_16000.ogg : ok
+    vorbis_7ch_q3.5_96000.ogg : ok
+    vorbis_7ch_q4.5_44100.ogg : ok
+    vorbis_7ch_q4.5_48000.ogg : ok
+    vorbis_7ch_q4.5_32000.ogg : ok
+    vorbis_7ch_q4.5_22050.ogg : ok
+    vorbis_7ch_q4.5_16000.ogg : ok
+    vorbis_7ch_q4.5_96000.ogg : ok
+    vorbis_7ch_q5.5_44100.ogg : ok
+    vorbis_7ch_q5.5_48000.ogg : ok
+    vorbis_7ch_q5.5_32000.ogg : ok
+    vorbis_7ch_q5.5_22050.ogg : ok
+    vorbis_7ch_q5.5_16000.ogg : ok
+    vorbis_7ch_q5.5_96000.ogg : ok
+    vorbis_7ch_q6.5_44100.ogg : ok
+    vorbis_7ch_q6.5_48000.ogg : ok
+    vorbis_7ch_q6.5_32000.ogg : ok
+    vorbis_7ch_q6.5_22050.ogg : ok
+    vorbis_7ch_q6.5_16000.ogg : ok
+    vorbis_7ch_q6.5_96000.ogg : ok
+    vorbis_7ch_q7.5_44100.ogg : ok
+    vorbis_7ch_q7.5_48000.ogg : ok
+    vorbis_7ch_q7.5_32000.ogg : ok
+    vorbis_7ch_q7.5_22050.ogg : ok
+    vorbis_7ch_q7.5_16000.ogg : ok
+    vorbis_7ch_q7.5_96000.ogg : ok
+    vorbis_7ch_q8.5_44100.ogg : ok
+    vorbis_7ch_q8.5_48000.ogg : ok
+    vorbis_7ch_q8.5_32000.ogg : ok
+    vorbis_7ch_q8.5_22050.ogg : ok
+    vorbis_7ch_q8.5_16000.ogg : ok
+    vorbis_7ch_q8.5_96000.ogg : ok
+    vorbis_7ch_q9.5_44100.ogg : ok
+    vorbis_7ch_q9.5_48000.ogg : ok
+    vorbis_7ch_q9.5_32000.ogg : ok
+    vorbis_7ch_q9.5_22050.ogg : ok
+    vorbis_7ch_q9.5_16000.ogg : ok
+    vorbis_7ch_q9.5_96000.ogg : ok
+
+Testing 8 channels
+
+    vorbis_8ch_q-0.5_44100.ogg : ok
+    vorbis_8ch_q-0.5_48000.ogg : ok
+    vorbis_8ch_q-0.5_32000.ogg : ok
+    vorbis_8ch_q-0.5_22050.ogg : ok
+    vorbis_8ch_q-0.5_16000.ogg : ok
+    vorbis_8ch_q-0.5_96000.ogg : ok
+    vorbis_8ch_q0.5_44100.ogg : ok
+    vorbis_8ch_q0.5_48000.ogg : ok
+    vorbis_8ch_q0.5_32000.ogg : ok
+    vorbis_8ch_q0.5_22050.ogg : ok
+    vorbis_8ch_q0.5_16000.ogg : ok
+    vorbis_8ch_q0.5_96000.ogg : ok
+    vorbis_8ch_q1.5_44100.ogg : ok
+    vorbis_8ch_q1.5_48000.ogg : ok
+    vorbis_8ch_q1.5_32000.ogg : ok
+    vorbis_8ch_q1.5_22050.ogg : ok
+    vorbis_8ch_q1.5_16000.ogg : ok
+    vorbis_8ch_q1.5_96000.ogg : ok
+    vorbis_8ch_q2.5_44100.ogg : ok
+    vorbis_8ch_q2.5_48000.ogg : ok
+    vorbis_8ch_q2.5_32000.ogg : ok
+    vorbis_8ch_q2.5_22050.ogg : ok
+    vorbis_8ch_q2.5_16000.ogg : ok
+    vorbis_8ch_q2.5_96000.ogg : ok
+    vorbis_8ch_q3.5_44100.ogg : ok
+    vorbis_8ch_q3.5_48000.ogg : ok
+    vorbis_8ch_q3.5_32000.ogg : ok
+    vorbis_8ch_q3.5_22050.ogg : ok
+    vorbis_8ch_q3.5_16000.ogg : ok
+    vorbis_8ch_q3.5_96000.ogg : ok
+    vorbis_8ch_q4.5_44100.ogg : ok
+    vorbis_8ch_q4.5_48000.ogg : ok
+    vorbis_8ch_q4.5_32000.ogg : ok
+    vorbis_8ch_q4.5_22050.ogg : ok
+    vorbis_8ch_q4.5_16000.ogg : ok
+    vorbis_8ch_q4.5_96000.ogg : ok
+    vorbis_8ch_q5.5_44100.ogg : ok
+    vorbis_8ch_q5.5_48000.ogg : ok
+    vorbis_8ch_q5.5_32000.ogg : ok
+    vorbis_8ch_q5.5_22050.ogg : ok
+    vorbis_8ch_q5.5_16000.ogg : ok
+    vorbis_8ch_q5.5_96000.ogg : ok
+    vorbis_8ch_q6.5_44100.ogg : ok
+    vorbis_8ch_q6.5_48000.ogg : ok
+    vorbis_8ch_q6.5_32000.ogg : ok
+    vorbis_8ch_q6.5_22050.ogg : ok
+    vorbis_8ch_q6.5_16000.ogg : ok
+    vorbis_8ch_q6.5_96000.ogg : ok
+    vorbis_8ch_q7.5_44100.ogg : ok
+    vorbis_8ch_q7.5_48000.ogg : ok
+    vorbis_8ch_q7.5_32000.ogg : ok
+    vorbis_8ch_q7.5_22050.ogg : ok
+    vorbis_8ch_q7.5_16000.ogg : ok
+    vorbis_8ch_q7.5_96000.ogg : ok
+    vorbis_8ch_q8.5_44100.ogg : ok
+    vorbis_8ch_q8.5_48000.ogg : ok
+    vorbis_8ch_q8.5_32000.ogg : ok
+    vorbis_8ch_q8.5_22050.ogg : ok
+    vorbis_8ch_q8.5_16000.ogg : ok
+    vorbis_8ch_q8.5_96000.ogg : ok
+    vorbis_8ch_q9.5_44100.ogg : ok
+    vorbis_8ch_q9.5_48000.ogg : ok
+    vorbis_8ch_q9.5_32000.ogg : ok
+    vorbis_8ch_q9.5_22050.ogg : ok
+    vorbis_8ch_q9.5_16000.ogg : ok
+    vorbis_8ch_q9.5_96000.ogg : ok
+
+==== MEMORY CHECK RESULT: PASS (no leaks, no out-of-bounds, no UB) ====

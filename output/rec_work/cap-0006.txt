@@ -1,0 +1,40 @@
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ printf '\n### 5/6 Independent valgrind memcheck cross-check ###\n'
+
+### 5/6 Independent valgrind memcheck cross-check ###
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ grep -A3 'under valgrind memcheck' output/logs/memory-check.log | tail -6
+  dim=0, entries=8388608 (ov_ilog check: 0+24=24)...
+--
+==== Running full encode/decode suite under valgrind memcheck ====
+
+Testing 1 channel
+
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

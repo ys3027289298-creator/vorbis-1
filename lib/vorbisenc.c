@@ -26,6 +26,7 @@
 
 #include "os.h"
 #include "misc.h"
+#include "registry.h"
 
 /* careful with this; it's using static array sizing to make managing
    all the modes a little less annoying.  If we use a residue backend
@@ -459,6 +460,19 @@ static void vorbis_encode_residue_setup(vorbis_info *vi,
 
   codec_setup_info *ci=vi->codec_setup;
   int i;
+
+  /* The short- and long-block modes reuse the same residue slot
+     numbers (see the residuesubmap tables in lib/modes/), so a slot can
+     be set up more than once for a single stream.  Overwriting the
+     pointer leaks the previous allocation because vorbis_info_clear()
+     only releases the slot once.  When a slot is reconfigured with the
+     same residue backend, release the previous object before replacing
+     it.  The resident object and every encoded byte are unchanged. */
+  if(ci->residue_param[number] &&
+     ci->residue_type[number]==res->res_type){
+    _residue_P[ci->residue_type[number]]->free_info(ci->residue_param[number]);
+    ci->residue_param[number]=NULL;
+  }
 
   vorbis_info_residue0 *r=ci->residue_param[number]=
     _ogg_malloc(sizeof(*r));

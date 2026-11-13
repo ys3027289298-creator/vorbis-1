@@ -1,0 +1,40 @@
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ printf '\n### 6/6 Output identity: Ogg bytes and decoded PCM unchanged ##
+#\n'
+
+### 6/6 Output identity: Ogg bytes and decoded PCM unchanged ###
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ grep -E 'IDENTITY|ALL CHECKS' output/logs/check-all.log
+==== OUTPUT IDENTITY: PASS - 528 cases, Ogg bytes and PCM samples identical ====
+######## ALL CHECKS PASSED ########
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

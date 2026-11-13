@@ -1,0 +1,40 @@
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ printf '\n### 2/6 Leak found by AddressSanitizer (pre-fix build) ###\n'
+
+### 2/6 Leak found by AddressSanitizer (pre-fix build) ###
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ grep -E 'LeakSanitizer|vorbisenc.c|SUMMARY' output/logs/asan-prefix-leak.
+log | head -8
+==2647843==ERROR: LeakSanitizer: detected memory leaks
+    #1 0x5ee237568e64 in vorbis_encode_residue_setup /home/ys/feedback/uidreczz28ZAeUf6VCJ/lib/vorbisenc.c:464
+    #2 0x5ee237568e64 in vorbis_encode_map_n_res_setup /home/ys/feedback/uidreczz28ZAeUf6VCJ/lib/vorbisenc.c:613
+    #3 0x5ee237568e64 in vorbis_encode_setup_init /home/ys/feedback/uidreczz28ZAeUf6VCJ/lib/vorbisenc.c:830
+    #4 0x5ee23756b896 in vorbis_encode_init_vbr /home/ys/feedback/uidreczz28ZAeUf6VCJ/lib/vorbisenc.c:943
+SUMMARY: AddressSanitizer: 62656 byte(s) leaked in 22 allocation(s).
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

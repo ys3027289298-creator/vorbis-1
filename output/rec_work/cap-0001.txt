@@ -1,0 +1,40 @@
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ printf '\n### 1/6 Repository and check entry points ###\n'
+
+### 1/6 Repository and check entry points ###
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ git log --oneline -1 && ls scripts/
+[33m1b75110b ([1m[36mHEAD[0m[33m, [1m[31morigin/main[0m[33m, [1m[31morigin/HEAD[0m[33m, [1m[32mmain[0m[33m)[39m [vorbisfile] Fix use-after-free in ov_pcm_page_seek
+check-all.sh  run-memory-check.sh  toolchain.sh  verify-output-identity.sh
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ sed -n '1,20p' scripts/check-all.sh
+#!/usr/bin/env bash
+#
+# check-all.sh - one-command entry point for the complete verification.
+#
+#   1. memory checks  : full encode/decode + codebook suite under
+#                       ASan/UBSan/LSan (and valgrind memcheck when present),
+#                       requiring zero leaks and zero out-of-bounds access
+#   2. output identity: byte-identical Ogg streams and decoded PCM samples
+#                       versus the pristine pre-fix library, across all 528
+#                       encode/decode parameter combinations
+#
+# Usage:  scripts/check-all.sh
+
+set -euo pipefail
+
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+"$HERE/run-memory-check.sh"
+"$HERE/verify-output-identity.sh"
+
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$
+
+
+
+
+
+
+
+
+
+
+
+

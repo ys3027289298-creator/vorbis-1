@@ -1,0 +1,17 @@
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0000.png'
+duration 2.4
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0001.png'
+duration 1.7
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0002.png'
+duration 2.4
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0003.png'
+duration 2.4
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0004.png'
+duration 1.7
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0005.png'
+duration 2.4
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0006.png'
+duration 2.4
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0007.png'
+duration 2.4
+file '/home/ys/feedback/uidreczz28ZAeUf6VCJ/output/rec_work/frames/frame-0007.png'

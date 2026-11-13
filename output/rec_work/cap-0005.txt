@@ -1,0 +1,40 @@
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ printf '\n### 4/6 Full suite under ASan/UBSan/LSan: 528 cases, zero findi
+ngs ###\n'
+
+### 4/6 Full suite under ASan/UBSan/LSan: 528 cases, zero findings ###
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ grep -E 'Running full encode|RESULT' output/logs/memory-check.log
+==== Running full encode/decode suite (528 cases) under ASan/UBSan/LSan ====
+==== Running full encode/decode suite under valgrind memcheck ====
+==== MEMORY CHECK RESULT: PASS (no leaks, no out-of-bounds, no UB) ====
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

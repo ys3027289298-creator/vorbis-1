@@ -1,0 +1,40 @@
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ printf '\n### 1/6 Repository and check entry points ###\n'
+
+### 1/6 Repository and check entry points ###
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$ git log --oneline -1 && ls scripts/
+[33m1b75110b ([1m[36mHEAD[0m[33m, [1m[31morigin/main[0m[33m, [1m[31morigin/HEAD[0m[33m, [1m[32mmain[0m[33m)[39m [vorbisfile] Fix use-after-free in ov_pcm_page_seek
+check-all.sh  run-memory-check.sh  toolchain.sh  verify-output-identity.sh
+ys@zz:/home/ys/feedback/uidreczz28ZAeUf6VCJ$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
