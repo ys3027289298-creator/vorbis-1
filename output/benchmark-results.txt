@@ -1,0 +1,15 @@
+== CMake 构建 (ctest 入口) ==
+asset: 11556 bytes ogg (2 ch, 44100 Hz, 2 s, q=0.4)
+decode: 25 iters, 352800 pcm bytes/iter
+time:   total 99.1 ms, best 3.55 ms/iter (threshold total <= 500.0 ms)
+memory: peak rss 4048 KB (threshold <= 65536 KB)
+pcm hash: 0x13c54b8c0705d39a
+BENCH: PASS
+
+== autotools 构建 (make check 入口, -O2) ==
+asset: 11556 bytes ogg (2 ch, 44100 Hz, 2 s, q=0.4)
+decode: 25 iters, 352800 pcm bytes/iter
+time:   total 44.2 ms, best 1.54 ms/iter (threshold total <= 500.0 ms)
+memory: peak rss 4432 KB (threshold <= 65536 KB)
+pcm hash: 0x19ca2ab319df7a01
+BENCH: PASS
